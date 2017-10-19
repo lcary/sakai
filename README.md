@@ -29,7 +29,7 @@ mvn clean install sakai:deploy -Dmaven.tomcat.home=/path/to/your/tomcat
 Now start Tomcat:
 ```
 cd /path/to/your/tomcat/bin
-./startup.sh && tail -f ../logs.catalina.out
+catalina start && tail -f ../libexec/logs/catalina.out
 ```
 
 Once Sakai has started up (it usually takes around 30 seconds), open your browser and navigate to http://localhost:8080/portal
